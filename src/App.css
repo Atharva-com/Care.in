@@ -1,38 +1,224 @@
+@import url(//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css);
+
+body{
+  width: 100%;
+  height: auto;
+  font-family: "Roboto,Helvetica Neue,sans-serif";
+  overflow-x: hidden;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-btn {
+  /* border: 1px solid green; */
+  border-radius: 30px;
+  border: 2px solid #fff;
+  padding: 5px 17px  !important;
+  text-decoration: none;
+  color: #fff !important;
+  line-height: 1.5 !important;
+  text-align: center;
+  display: block;
+  transition: all 0.5s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-btn:hover {
+  color: rgb(232, 232, 126) !important;
+  border: 2px solid rgb(232, 232, 126);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+select {
+  color: rgba(0, 0, 0, 0.42);
+  position: relative;
+  top: 1rem;
+  margin-right: 2rem;
+  /* margin: 2rem 3rem 0rem 0rem; */
+  width: 26%;
+  padding: 0.8rem;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.nav-item{
+  padding-left: 2rem;
+}
+
+.navbar-light{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-item a{
   color: white;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item a:hover{
+  color: rgb(240, 214, 67);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-container{
+  position: relative;
+  top: 10rem;
+}
+
+.hosp-list {
+  width: 10%;
+  padding: 0rem;
+  border: transparent solid;
+  border-radius: 25px;
+  position: relative;
+  bottom: -0.8rem;
+  background-color: rgb(54, 134, 134);
+}
+.hosp-list .btn{
+  color: white;
+  font-size: 1.4rem;
+}
+.hosp-list:hover {
+  background-color: rgb(54, 134, 134) !important;
+}
+
+.main-card-container{
+  position: relative;
+  top: 15rem;
+  background-color: #edffff;
+  height: 90vh;
+}
+
+@media (max-width: 770px) {
+  .arrow img{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .d-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  .main-card-container{
+    top: 10rem;
+    height: 195vh !important;
+    background-color: #edffff;
+  }
+  
+  .navbar-collapse{
+    justify-content: center !important;
+  }
+
+  .form-container{
+    position: relative;
+    top: 5rem;
+  }
+
+  select{
+    top: 2rem;
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .hosp-list{
+    width: 50%;
+    top: 2rem;
+  }
+
+  .accordion-flush{
+    left: 0 !important;
+  }
+
+  .issue-container{
+    top: 15rem !important;
+    height: 70vh !important;
+  }
+
+  .issue-container p{
+    left: 1rem !important;
+    width: 21rem !important;
+  }
+
+  .issue-container a{
+    width: 40% !important;
+    padding: 0.3rem !important;
+    left: 6rem !important;
+  }
+  .issue-img{
+    width: 100% !important;
+  }
+
+  .footer{
+    top: 23rem !important;
+  }
+
+  .FAQ{
+    top: 17rem !important;
+  }
+
+  .address h5{
+    position: relative;
+    top: 2rem;
+  }
+
+  .address p{
+    position: relative;
+    top: 2rem;
+  }
+
+  .about .footer , .login .footer , .Hosplist .footer{
+    display: none !important;
+  }
+}
+
+.issue-container{
+  position: relative;
+  top: 20rem;
+  height: 45vh;
+  background-color: #bdf0f0;
+}
+
+/* .FAQ{
+  position: relative;
+  top: 20rem;
+  height: 100vh;
+} */
+
+.list{
+  position: relative;
+  top: 4rem;
+  /* height: 100vh; */
+}
+
+.report{
+  position: relative;
+  top: 6rem;
 }
